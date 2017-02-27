@@ -5,40 +5,34 @@
 body{
 background: #f4f4f4f;}
 
-   .b-table{
-     position:absolute;
+   .main{
+      
 	 margin-top: calc(50vh - 100px);
 	 margin-left: calc(50vw - 150px);
      width:300px;
      box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
      padding: 30px;
      }
-   .b-table_style{
-     width: 100%;
+   .main__table--style{
+    
+   
      box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
      }
-     tr.b-table_style{
+     tr{
            font-size: 16px;
            font-family: Tahoma,Arial;
      }
 
-  
-  
-  
-  
-  
-  
- 
-ul{
+ ul{
     list-style-type: none;
+   }
+
+
+
+
+ul,li{
+    margin-left: 10px; /* Отступ слева в браузере IE и Opera */
     }
-
-
-
-
-ul li{
-    margin-left: 2%; /* Отступ слева в браузере IE и Opera */
-    padding-left: 2%;}
 ul li:hover{
     background-color: #7B7B7B;}
 
@@ -48,7 +42,7 @@ li ul{
 li:hover ul{
     display: block;}
 
-li ul li:hover{
+li ul li:active{
     background-color: #7B7B7B;}
    
   
