@@ -12,14 +12,35 @@ background: #f4f4f4;}
      }
 .table--style{
      width: 100%;
-     border: 1px solid black; 
+     border-collapse: separate;
      border-collapse: collapse;}
-     tr {font-size: 16px;
-         font-family: Tahoma,Arial;}
-     ul{list-style-type: none;}
-     ul,li{ margin-left: 10px;}
-     li ul{display: none;}
+     tr {font-size: 10px;
+         font-family: Tahoma,Arial;
+         font-size: 12px;
+         border: 1px solid rgba(0,0,0,0.2);
+         }
+h3 span {
+	float: right;
+	cursor: pointer;
+	}
+
+ul {
+	padding: 5px;
+	overflow: hidden;
+	margin:0;
    
+	}
+ul li {
+	list-style-position: inside;
+    list-style-type: none; 
+	color: #5abd76;
+	font-family: Tahoma,Arial;
+    font-size: 12px;
+    font-weight:600;
+	}
+
+
+
 
    
   
