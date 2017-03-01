@@ -1,9 +1,7 @@
 ﻿*{ box-sizing: border-box;
     margin: 0;
     padding: 0;}
-
-body{
- background: #ffffFF;}
+body{background: #ffffFF;}
 .content{
      margin-top: calc(50vh - 200px);
 	 margin-left: calc(50vw - 400px);
@@ -12,46 +10,44 @@ body{
      box-shadow: inset 0 0 5px #ffffff;
      padding: 30px;
      }
- h2{
-    color: #000000;
+
+.scrolling-table{width: 100%;  
+   text-align: left;}
+.scrolling-table tr td {padding: 0px 0px;
+    text-align: left;
+    color: #666;}
+.scrolling-table tr td:last-child {
+    border-right: none;}
+.scrolling-table tr:last-child td {border-bottom: none;}
+.scrolling-table tbody {display: block;
+      height: 250px;
+      background: ;
+      overflow: hidden;
+      overflow-y: auto;}
+.scrolling-table tbody tr:nth-of-type(odd){
+      background: #DDDDDD;}
+.scrolling-table tr{
+    display: table;
+    width: 740px;;
+    table-layout: fixed;}
+.scrolling-table thead tr{display: table;
+    background: #333333;
+    color: #FFFFFF;
+    width: 735px;
+    table-layout: fixed;} 
+
+a{color: #FFFFFF;}
+h2{ color: #000000;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    font-weight: 200;} 
-
- .scrolling-table{
-   width: 100%;  
-   text-align: left;
-   border: 1px solid #E90E8B;
-}
-thead tr{
-  
-     
-}
-
-.scrolling-table tr td {
-padding: 0px 0px;
-border-right: 1px solid #E90E8B;
-border-bottom: 1px solid #E90E8B;
-text-align: left;
-color: #666;
-}
-.scrolling-table tr td:last-child {
-border-right: none;
-}
- .scrolling-table tr:last-child td {
-border-bottom: none;
-}
-.scrolling-table tbody {
-      display: block;
-      height: 150px;
-      overflow: hidden;
-      overflow-y: auto;
-}
- 
-.scrolling-table tr{
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
- 
+    font-weight: 200;}
+::-webkit-scrollbar {
+    width: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)  inset;
+    background: rgba(255,255,255, 0.5);
+    }
+::-webkit-scrollbar-thumb {background: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 1ex;
+     border: 2px solid  rgba(255,255, 255, 1); ;
+    -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);}
